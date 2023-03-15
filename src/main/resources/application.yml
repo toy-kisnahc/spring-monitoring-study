@@ -1,0 +1,30 @@
+management:
+  server:
+    port: 9292
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true # shutdown ?? ??? ? http ??.
+  endpoints:
+    web:
+      exposure:
+       include: "*" # ????? ?? ?? ??.
+
+info:
+  app:
+    name: hello-actuator
+    company: hello-spring
+
+logging:
+  level:
+    hello.controller: debug
+
+
